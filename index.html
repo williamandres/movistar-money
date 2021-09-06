@@ -37,15 +37,22 @@
                 financiera  </strong> con opciones de crédito hechas a tu medida, de fácil acceso, 
             innovadoras y transparentes.
         </p>
-        <div class="first-section-form-container" id="form" >
+        <div class="first-section-form-container"  >
 
-            <p class="first-section-form-paragraph">
+            <p class="first-section-form-paragraph " id="paragraph-form">
                 Si ya haces parte de Movistar y quieres ser uno de 
                 los primeros beneficiarios de nuestros créditos, 
                 déjanos tus datos y te contactaremos.
             </p>
 
-            <form class="form" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            
+            <p class="paragraph-after-send disappear" id="paragraph-after-send">
+                ¡Pronto nos comunicaremos contigo! 
+            </p>
+            
+            <button class="button-after-send hero-message-button disappear" id="button-after-send"> Gracias </button>
+
+            <form class="form " id="form" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
                 <input type=hidden name="oid" value="00D5e000000L8kE">
                 <input type=hidden name="retURL" value="http://https://credisferaorg2--uat.lightning.force.com/">
@@ -53,19 +60,19 @@
 
                 <label for="last_name" class="label">
                     <div class="input-icon input-icon-name">
-                    <input class="input input-name"  placeholder="Nombre" id="last_name" maxlength="80" name="last_name" size="20" type="text"  required/><br>
+                    <input class="input input-name"  placeholder="Nombre" id="last_name" maxlength="80" name="last_name" size="20" type="text"  /><br>
                     </div>
                 </label>
 
                 <label for="email" class="label" >
                     <div class="input-icon input-icon-email">
-                        <input placeholder="Email" class="input input-name"  id="email" maxlength="80" name="email" size="20" type="text" required /><br>
+                        <input placeholder="Email" class="input input-name"  id="email" maxlength="80" name="email" size="20" type="text" /><br>
                     </div>
                 </label>
                 
                 <label for="mobile" class="label">
                     <div class="input-icon input-icon-mobile">
-                        <input class="input input-name" placeholder="Celular"  id="mobile" maxlength="40" name="mobile" size="20" type="text" required /><br>
+                        <input class="input input-name" placeholder="Celular"  id="mobile" maxlength="40" name="mobile" size="20" type="text"  /><br>
                     </div>
                 </label>
 
@@ -77,7 +84,7 @@
                 </div>
 
                 <div class="checkbox-container " >
-                    <input  id="00N5e00000eRNZb" name="00N5e00000eRNZb" type="checkbox" value="2"  class="checkbox" required/>
+                    <input  id="00N5e00000eRNZb" name="00N5e00000eRNZb" type="checkbox" value="2"  class="checkbox" />
                     <label class="checkbox-text" for="00N5e00000eRNZb" style="text-decoration: underline;">
                         Acepto los Términos y Condiciones y la Política de Datos Personales, declaro que los he 
                         leído en su totalidad y que estoy de acuerdo con su contenido.
@@ -85,7 +92,7 @@
                 </div>
                 <br>
 
-                <input type="submit" name="submit" class="input-submit hero-message-button" value="Enviar">
+                <input type="submit" id="submit" name="submit" class="input-submit hero-message-button" value="Enviar">
 
             </form>
         </div>
@@ -152,5 +159,6 @@
         </div>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 

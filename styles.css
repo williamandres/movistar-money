@@ -952,6 +952,25 @@ p
     cursor: pointer;
 }
 
+.paragraph-after-send
+{
+    color: var(--white-color);
+    font-family: var(--telefonica-regular);
+    font-size: 1.4rem;
+    padding: 100px 0 100px 0;
+}
+
+.button-after-send
+{
+    color: var(--white-color);
+    margin-bottom: 26px;
+}
+
+.disappear
+{
+    display: none;
+}
+
 @media screen and (min-width: 640px) {
     .checkbox-container
     {
@@ -962,6 +981,11 @@ p
 
 /* *** */
 /* ****** Utilities ******* */
+
+.displaynone
+{
+    display: none;
+}
 
 .subtitle
 {
