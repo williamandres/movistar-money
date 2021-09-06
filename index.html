@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>Movistar</title>
 </head>
@@ -25,19 +26,69 @@
         
         <div class="hero-image-container">
             <img src="assets/hero-image.png" alt="" class="hero-image">
-            <!-- <a href="https://smartfit.com.co/sedes/tintal-plaza" class="hero-aside-link">Aplican términos y condiciones</a> -->
         </div>
     </section>
 
     
 
     <section class="first-section">
-        <p>
+        <p class="first-section-paragraph">
             Pronto estaremos contigo, <strong> llegaremos a romper barreras de inclusión 
                 financiera  </strong> con opciones de crédito hechas a tu medida, de fácil acceso, 
             innovadoras y transparentes.
         </p>
-        <div class="first-section-form" id="form" ></div>
+        <div class="first-section-form-container" id="form" >
+
+            <p class="first-section-form-paragraph">
+                Si ya haces parte de Movistar y quieres ser uno de 
+                los primeros beneficiarios de nuestros créditos, 
+                déjanos tus datos y te contactaremos.
+            </p>
+
+            <form class="form" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+                <input type=hidden name="oid" value="00D5e000000L8kE">
+                <input type=hidden name="retURL" value="http://https://credisferaorg2--uat.lightning.force.com/">
+                <input type=hidden id="company" name="company" value="Movistarmoney"/>
+
+                <label for="last_name" class="label">
+                    <div class="input-icon input-icon-name">
+                    <input class="input input-name"  placeholder="Nombre" id="last_name" maxlength="80" name="last_name" size="20" type="text"  required/><br>
+                    </div>
+                </label>
+
+                <label for="email" class="label" >
+                    <div class="input-icon input-icon-email">
+                        <input placeholder="Email" class="input input-name"  id="email" maxlength="80" name="email" size="20" type="text" required /><br>
+                    </div>
+                </label>
+                
+                <label for="mobile" class="label">
+                    <div class="input-icon input-icon-mobile">
+                        <input class="input input-name" placeholder="Celular"  id="mobile" maxlength="40" name="mobile" size="20" type="text" required /><br>
+                    </div>
+                </label>
+
+                <div class="checkbox-container">
+                    <input  id="00N5e00000eRNZb" name="00N5e00000eRNZb" type="checkbox" value="1"  class="checkbox"/>
+                    <label class="checkbox-text" for="00N5e00000eRNZb">
+                        Autorizo recibir información comercial conforme a la Política de Datos Personales
+                    </label>
+                </div>
+
+                <div class="checkbox-container " >
+                    <input  id="00N5e00000eRNZb" name="00N5e00000eRNZb" type="checkbox" value="2"  class="checkbox" required/>
+                    <label class="checkbox-text" for="00N5e00000eRNZb" style="text-decoration: underline;">
+                        Acepto los Términos y Condiciones y la Política de Datos Personales, declaro que los he 
+                        leído en su totalidad y que estoy de acuerdo con su contenido.
+                    </label>
+                </div>
+                <br>
+
+                <input type="submit" name="submit" class="input-submit hero-message-button" value="Enviar">
+
+            </form>
+        </div>
     </section>
 
     <section class="second-section">
