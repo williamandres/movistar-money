@@ -686,8 +686,17 @@ p
 /* ** Terms_condition ** */
     .terms_condition_body
     {
-        padding: 26px 16px 16px 16px;
+        padding: 0 16px 16px 16px;
         background-color: var(--section-gray-color);
+    }
+
+    .terms_condition_header
+    {
+        position: sticky;
+        top: 0;
+        background-color: var(--section-gray-color);
+        padding-bottom: 20px;
+        padding-top: 26px;
     }
 
     .terms_condition_link_logo
@@ -742,9 +751,9 @@ p
         background-color: var(--white-color);
         padding: 16px;
         margin: 0 auto;
-        margin-top: 20px;
         border-radius: 10px;
         font-family: var(--telefonica-regular);
+        
     }
 
     .terms_condition_content_title
@@ -757,7 +766,7 @@ p
 
     .terms_condition_content_p, .terms_condition_content_list
     {
-        width: 100%;
+        width: 96%;
         font-size: .8rem;
         line-height: 20px;
         color: var(--terms-condition-text-color);
