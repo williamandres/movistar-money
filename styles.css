@@ -903,7 +903,7 @@ p
 
 .input-icon-name
 {
-    background-image: url('assets/name-icon.png');
+    background-image: url('assets/person.png');
     background-repeat: no-repeat;
     background-size: 26px;
 }
@@ -929,7 +929,7 @@ p
 .checkbox-container
 {
     display: flex;
-    justify-content: center;
+    
     color: white;
     font-size: .8rem;
     text-align: left;
@@ -937,6 +937,10 @@ p
     margin: 14px auto;
 }
 
+.checkbox
+{
+    padding-top: 20px;
+}
 
 .checkbox-text
 {
@@ -1015,6 +1019,48 @@ p
 
 
 }
+
+/* *** checkbox *** */
+
+[type='checkbox'] {
+    display: none;
+}
+
+.checkbox-text 
+{
+    padding-left: 1.8rem;
+    position: relative;
+}
+
+.checkbox-text:before 
+{
+    content: '';
+    border: solid 1px var(--main-color);
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    position: absolute;
+    left: 0px;
+    top: 4px;
+}
+
+.checkbox-text1:before
+{
+    top: 20px;
+} 
+
+[type='checkbox']:checked + .checkbox-text:before {
+    background-color: var(--main-color);
+    content: '✔';
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    
+}
+
+/* ** */
+
 
 /* *************** */
 
