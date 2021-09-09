@@ -977,6 +977,7 @@ p
 {
     color: var(--white-color);
     margin-bottom: 26px;
+    cursor: pointer;
 }
 
 .disappear
