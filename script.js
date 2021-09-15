@@ -6,12 +6,12 @@ const buttonAfterSend = document.getElementById("button-after-send")
 
 
 
-    form.addEventListener('submit', handleSubmit)
+    // form.addEventListener('submit', handleSubmit)
 
-    function handleSubmit(event){
-        event.preventDefault()
+    // function handleSubmit(event){
+    //     event.preventDefault()
 
-    }
+    // }
     const btn = document.getElementById('submit')
 
     btn.addEventListener('click',change,true)
