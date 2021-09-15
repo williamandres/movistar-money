@@ -21,8 +21,6 @@ const buttonAfterSend = document.getElementById("button-after-send")
             form.classList.add('displaynone')
             paragraphAfterSend.classList.remove('disappear')
             buttonAfterSend.classList.remove('disappear')
-        
-
     }
 
 
