@@ -1,4 +1,4 @@
-const form = document.getElementById("form")
+const form = document.getElementById("sampleForm")
 const paragraphAfterSend = document.getElementById("paragraph-after-send")
 const buttonAfterSend = document.getElementById("button-after-send")
 
@@ -12,7 +12,7 @@ const buttonAfterSend = document.getElementById("button-after-send")
     //     event.preventDefault()
 
     // }
-    const btn = document.getElementById('submit')
+    const btn = document.getElementById('btnSubmit')
 
     btn.addEventListener('click',change,true)
 

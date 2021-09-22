@@ -934,16 +934,36 @@ p
     color: var(--white-color);
 }
 
+.first-checkbox 
+{
+    margin: 0 auto;
+}
 
 .checkbox-container
 {
     display: flex;
-    
     color: white;
     font-size: .8rem;
     text-align: left;
     font-family: var(--telefonica-regular);
-    margin: 14px auto;
+    margin: 10px auto;
+    
+}
+
+
+.checkbox-container-2:first-child 
+{
+    padding-bottom: 12px;
+}
+
+.checkbox-container-2
+{
+    color: var(--white-color);
+    font-size: .8rem;
+    text-align: left;
+    padding-bottom: 20px;
+    font-family: var(--telefonica-regular);
+    padding-top: 10px;
 }
 
 .checkbox
@@ -989,6 +1009,7 @@ p
     .checkbox-container
     {
         width: 300px;
+        
     }
 }
 
@@ -1051,7 +1072,7 @@ p
     height: 20px;
     position: absolute;
     left: 0px;
-    top: 4px;
+    top: -3px;
 }
 
 .checkbox-text1:before

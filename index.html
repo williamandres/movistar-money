@@ -52,29 +52,39 @@
             
             <button class="button-after-send hero-message-button disappear" id="button-after-send"> Gracias </button>
 
-            <form class="form " id="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <form class="form" id="sampleForm" action="" >
 
-                <input type="hidden" name="oid" value="00D5e000000L8kE">                
-                <input type="hidden" id="company" name="company" value="Movistarmoney">
-            
-                <label for="last_name" class="label">
+                <label for="LastName" class="label">
                     <div class="input-icon input-icon-name">
                     <input class="input input-name" placeholder="Nombre" id="last_name" maxlength="80" name="last_name" size="20" type="text"><br>
                     </div>
                 </label>
-            
-                <label for="email" class="label">
+
+                <label for="Email" class="label">
                     <div class="input-icon input-icon-email">
-                        <input placeholder="Email" class="input input-name" id="email" maxlength="80" name="email" size="20" type="text"><br>
+                        <input placeholder="Email" class="input input-name" id="email" maxlength="80" name="email" size="20" type="email"><br>
                     </div>
                 </label>
-                
+
                 <label for="mobile" class="label">
                     <div class="input-icon input-icon-mobile">
-                        <input class="input input-name" placeholder="Celular" id="00N5e00000bDrUC" name="00N5e00000bDrUC" maxlength="40" name="mobile" size="20" type="text"><br>
+                        <input class="input input-name" placeholder="Celular" id="mobile" name="mobile" maxlength="40"  size="20" type="phone"><br>
                     </div>
                 </label>
-            
+
+                <div class="first-checkbox">
+                    <div class="checkbox-container-2">
+                        <input type="checkbox" class="input-text input-text-block w-100" id="lead_equipment_credit" name="lead_equipment_credit">
+                        <label for="lead_equipment_credit" class="checkbox-text label">Crédito de equipos</label>
+                    </div>
+    
+                    <div class="checkbox-container-2">
+                        <input type="checkbox" class="checkbox" id="lead_free_investment_credit" name="lead_free_investment_credit">
+                        <label for="lead_free_investment_credit" class="checkbox-text  label">Crédito libre inversión</label>
+                    </div>
+                </div>
+
+
                 <div class="checkbox-container ">
                     <input id="00N5e00000eRNZb" name="00N5e00000eRNZb" type="checkbox" value="2" class="checkbox" required="">
                     <label class="checkbox-text checkbox-text1 label" for="00N5e00000eRNZb" style="text-decoration: underline;">
@@ -84,16 +94,15 @@
                 </div>
             
                 <div class="checkbox-container">
-                    <input id="accept" type="checkbox" value="1" class="checkbox">
-                    <label class="checkbox-text label" for="accept">
+                    <input id="lead_authorize_receive_commercial_info" type="checkbox" value="1" class="checkbox" name="lead_authorize_receive_commercial_info">
+                    <label class="checkbox-text label" for="lead_authorize_receive_commercial_info">
                         Autorizo recibir información comercial conforme a la Política de Datos Personales
                     </label>
                 </div>
-            
-                
+
                 <br>
             
-                <input type="submit" id="submit" name="submit" class="input-submit hero-message-button" value="Enviar">
+                <input type="submit" id="btnSubmit" name="submit" class="input-submit hero-message-button" value="Enviar">
             
             </form>
 
@@ -162,5 +171,6 @@
 
     </footer>
     <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 
