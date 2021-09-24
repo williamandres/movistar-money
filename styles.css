@@ -882,17 +882,11 @@ p
     margin: 0 auto;
 }
 
-.input 
-{
-    font-size: .7rem;
-    padding: 20px;
-}
-
 .input-icon
 {
     width: 300px;
-    padding: 0 0 5px 5px;
-    height: 40px;
+    padding: 0 0 5px 38px;
+    height: 30px;
     border-bottom: 1px solid #ec624b;
     width: 200px;
     margin-bottom: 20px;
@@ -903,7 +897,6 @@ p
 .input-icon-email
 {
     background-image: url('assets/email-icon.png');
-    background-position: center;
     background-repeat: no-repeat;
     background-size: 30px;
     
@@ -912,7 +905,6 @@ p
 .input-icon-mobile
 {
     background-image: url('assets/phone-icon.png');
-    background-position: top;
     background-repeat: no-repeat;
     background-size: 20px;
 
