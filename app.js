@@ -13,7 +13,7 @@ async function submitForm(e, form) {
     // 2.3 Request & Response
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", 'https://movistarmoney.secure.force.com/leads/services/apexrest/webToLead/v1/', true);
+    xhr.open("POST", 'https://uat-movistarmoney-chat.cs166.force.com/leads/services/apexrest/webToLead/v1/', true);
 
     // Envia a informação do cabeçalho junto com a requisição.
     xhr.setRequestHeader("Content-Type", "application/json");
