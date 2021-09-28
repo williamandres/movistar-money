@@ -1,0 +1,32 @@
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+ function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+</script>
+
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name='captcha_settings' value='{"keyname":"movistar","fallback":"true","orgId":"00D5e000000L8kE","ts":""}'>
+<input type=hidden name="oid" value="00D5e000000L8kE">
+<input type=hidden name="retURL" value="http://http://movistarmoney.co/">
+<input type=hidden name="company" value="MovistarMoney" />
+
+
+
+<label for="last_name">Nombre</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+Celular:<input  id="00N5e00000bDrUC" maxlength="16" name="00N5e00000bDrUC" size="20" type="text" /><br>
+
+Crédito de equipos:<input  id="00N5e00000eRocs" name="00N5e00000eRocs" type="checkbox" value="1" /><br>
+
+Crédito libre inversión:<input  id="00N5e00000eRoct" name="00N5e00000eRoct" type="checkbox" value="1" /><br>
+
+Autorizo ​​recibir información comercial:<input  id="00N5e00000eRNZb" name="00N5e00000eRNZb" type="checkbox" value="1" /><br>
+
+<div class="g-recaptcha" data-sitekey="6LckX7MUAAAAADDNzVnFn6GJseEGBD0qRVEL-dIl"></div><br>
+<input type="submit" name="submit">
+
+</form>

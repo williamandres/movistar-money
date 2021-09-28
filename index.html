@@ -7,7 +7,10 @@
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>Movistar</title>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+    function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+    </script>
 </head>
 <body>
     
@@ -53,53 +56,60 @@
             
             <button class="button-after-send hero-message-button disappear" id="button-after-send"> Gracias </button>
 
-            <form class="form" id="sampleForm" action="" >
+            <form class="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"  >
 
-                <label for="LastName" class="label">
+                <input type=hidden name='captcha_settings' value='{"keyname":"movistar","fallback":"true","orgId":"00D5e000000L8kE","ts":""}'>
+                <input type=hidden name="oid" value="00D5e000000L8kE">
+                <input type=hidden name="retURL" value="http://http://movistarmoney.co/">
+                <input type=hidden name="company" value="MovistarMoney" />
+
+                <label for="last_name" class="label">
                     <div class="input-icon input-icon-name">
-                    <input class="input input-name" placeholder="Nombre" id="last_name" maxlength="80" name="last_name" size="20" type="text"><br>
+                    <input class="input input-name" placeholder="Nombre" id="last_name" maxlength="80" name="last_name" size="20" type="text" required><br>
                     </div>
                 </label>
 
-                <label for="Email" class="label">
+                <label for="email" class="label">
                     <div class="input-icon input-icon-email">
-                        <input placeholder="Email" class="input input-name" id="email" maxlength="80" name="email" size="20" type="email"><br>
+                        <input placeholder="Email" class="input input-name" id="email" maxlength="80" name="email" size="20" type="email" required><br>
                     </div>
                 </label>
 
-                <label for="mobile" class="label">
+                <label for="00N5e00000bDrUC" class="label">
                     <div class="input-icon input-icon-mobile">
-                        <input class="input input-name" placeholder="Celular" id="mobile" name="mobile" maxlength="40"  size="20" type="phone"><br>
+                        <input class="input input-name" placeholder="Celular" id="00N5e00000bDrUC" name="00N5e00000bDrUC" maxlength="40"  size="20" type="phone" required><br>
                     </div>
                 </label>
 
                 <div class="first-checkbox">
                     <div class="checkbox-container-2">
-                        <input type="checkbox" class="input-text input-text-block w-100" id="lead_equipment_credit" name="lead_equipment_credit">
-                        <label for="lead_equipment_credit" class="checkbox-text label">Crédito de equipos</label>
+                        <input type="checkbox" class="input-text input-text-block w-100" id="00N5e00000eRocs" name="00N5e00000eRocs " checked>
+                        <label for="00N5e00000eRocs" class="checkbox-text label">Crédito de equipos</label>
                     </div>
     
                     <div class="checkbox-container-2">
-                        <input type="checkbox" class="checkbox" id="lead_free_investment_credit" name="lead_free_investment_credit">
-                        <label for="lead_free_investment_credit" class="checkbox-text  label">Crédito libre inversión</label>
+                        <input type="checkbox" class="checkbox" id="00N5e00000eRoct" name="00N5e00000eRoct" > 
+                        <label for="00N5e00000eRoct" class="checkbox-text  label">Crédito libre inversión</label>
                     </div>
                 </div>
 
 
                 <div class="checkbox-container ">
-                    <input id="00N5e00000eRNZb" name="00N5e00000eRNZb" type="checkbox" value="2" class="checkbox" required="">
-                    <label class="checkbox-text checkbox-text1 label" for="00N5e00000eRNZb" style="text-decoration: underline;">
+                    <input id="accept-terms" name="accept-terms" type="checkbox" value="2" class="checkbox" >
+                    <label class="checkbox-text checkbox-text1 label" for="accept-terms" style="text-decoration: underline;">
                         Acepto los Términos y Condiciones y la Política de Datos Personales, declaro que los he 
                         leído en su totalidad y que estoy de acuerdo con su contenido.
                     </label>
                 </div>
             
                 <div class="checkbox-container">
-                    <input id="lead_authorize_receive_commercial_info" type="checkbox" value="1" class="checkbox" name="lead_authorize_receive_commercial_info">
-                    <label class="checkbox-text label" for="lead_authorize_receive_commercial_info">
+                    <input id="00N5e00000eRNZb" type="checkbox" value="1" class="checkbox" name="00N5e00000eRNZb" required checked>
+                    <label class="checkbox-text label" for="00N5e00000eRNZb">
                         Autorizo recibir información comercial conforme a la Política de Datos Personales
                     </label>
                 </div>
+
+                
 
                 <br>
                 
