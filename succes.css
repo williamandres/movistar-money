@@ -37,7 +37,10 @@
 
 .succes-body
 {
-    background: url("assets/background-succes.png")
+    background: url("assets/background-succes.png");
+    padding-left: 70px;
+    padding-top: 70px;
+    
 }
 
 .succes-body h1 
