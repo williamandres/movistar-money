@@ -57,7 +57,7 @@
             
             <button class="button-after-send hero-message-button disappear" id="button-after-send"> Gracias </button>
 
-            <form class="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="return send(this);" id="form" >
+            <form class="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"  method="POST"  id="form" name="my-form" >
 
                 <!-- <input type=hidden name='captcha_settings' value='{"keyname":"movistar","fallback":"true","orgId":"00D5e000000L8kE","ts":""}'> -->
                 <input type=hidden name="oid" value="00D5e000000L8kE">
@@ -72,15 +72,17 @@
 
                 <label for="email" class="label">
                     <div class="input-icon input-icon-email">
-                        <input placeholder="Email" class="input input-name" id="email" maxlength="80" name="email" size="20" type="email" required><br>
+                        <input placeholder="Email" class="input input-name" id="email" maxlength="80" name="email" size="20" type="email" name="email" ><br>
                     </div>
                 </label>
 
                 <label for="00N5e00000bDrUC" class="label">
                     <div class="input-icon input-icon-mobile">
-                        <input class="input input-name" placeholder="Celular" id="00N5e00000bDrUC" name="00N5e00000bDrUC" maxlength="40"  size="20" type="phone" required><br>
+                        <input class="input input-name" placeholder="Celular" id="00N5e00000bDrUC" name="00N5e00000bDrUC" maxlength="40"  size="20" type="phone" name="mobile" ><br>
                     </div>
                 </label>
+
+                <div id="error"></div>
 
                 <div class="first-checkbox">
                     <div class="checkbox-container-2">
@@ -104,20 +106,18 @@
                 </div>
             
                 <div class="checkbox-container">
-                    <input id="00N5e00000eRNZb" type="checkbox" value="1" class="checkbox" name="00N5e00000eRNZb" required checked>
+                    <input id="00N5e00000eRNZb" type="checkbox"  class="checkbox" name="00N5e00000eRNZb" checked>
                     <label class="checkbox-text label" for="00N5e00000eRNZb">
                         Autorizo recibir información comercial conforme a la Política de Datos Personales
                     </label>
                 </div>
-
-                
 
                 <br>
                 
                 <!-- <div class="g-recaptcha" data-sitekey="6LckX7MUAAAAADDNzVnFn6GJseEGBD0qRVEL-dIl"></div> -->
                 <br/>
 
-                <input type="submit" id="btnSubmit" name="submit" class="input-submit hero-message-button" value="Enviar">
+                <input type="submit" id="btnSubmit" name="submit" class="input-submit hero-message-button" value="Enviar" onclick="return sendForm()">
                 
             </form>
 
@@ -186,7 +186,6 @@
 
     </footer>
     <script src="form.js"></script>
-    <script src="script.js"></script>
-    <script src="app.js"></script>
+    
 </body>
 
