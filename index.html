@@ -7,7 +7,7 @@
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
     <link rel="stylesheet" href="styles.css">
     <title>Movistar</title>
-    <!-- <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script>
     function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
     </script> -->
@@ -59,7 +59,7 @@
 
             <form class="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8"  method="POST"  id="form" name="my-form" >
 
-                <!-- <input type=hidden name='captcha_settings' value='{"keyname":"movistar","fallback":"true","orgId":"00D5e000000L8kE","ts":""}'> -->
+                <input type=hidden name='captcha_settings' value='{"keyname":"movistar","fallback":"true","orgId":"00D5e000000L8kE","ts":""}'> -->
                 <input type=hidden name="oid" value="00D5e000000L8kE">
                 <input type=hidden name="retURL" value="https://williamandres.github.io/movistar-money/succes.html">
                 <input type=hidden name="company" value="MovistarMoney" />
@@ -106,7 +106,7 @@
                 </div>
             
                 <div class="checkbox-container">
-                    <input id="00N5e00000eRNZb" type="checkbox"  class="checkbox" name="00N5e00000eRNZb" checked>
+                    <input id="00N5e00000eRNZb" type="checkbox"  class="checkbox" name="00N5e00000eRNZb" checked required>
                     <label class="checkbox-text label" for="00N5e00000eRNZb">
                         Autorizo recibir información comercial conforme a la Política de Datos Personales
                     </label>
@@ -114,7 +114,7 @@
 
                 <br>
                 
-                <!-- <div class="g-recaptcha" data-sitekey="6LckX7MUAAAAADDNzVnFn6GJseEGBD0qRVEL-dIl"></div> -->
+                <div class="g-recaptcha" data-sitekey="6LckX7MUAAAAADDNzVnFn6GJseEGBD0qRVEL-dIl"></div> 
                 <br/>
 
                 <input type="submit" id="btnSubmit" name="submit" class="input-submit hero-message-button" value="Enviar" onclick="return sendForm()">
