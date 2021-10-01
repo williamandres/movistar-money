@@ -61,7 +61,7 @@ function sendForm()
     } else {
         //captcha válida
         messageCaptcha.style.display = "none";
-    }
+        }
     
     return true
 
