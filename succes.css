@@ -34,6 +34,8 @@
     src: url('fonts/Telefonica-Light.otf'); 
 }
 
+
+
 .display-none 
 {
     display: none;
@@ -42,29 +44,39 @@
 
 .succes-body
 {
-    background: url("assets/background-succes.png");
-    padding-left: 70px;
-    padding-top: 70px;
-    
+    background: url("assets/background-succes-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 26px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.succes-body img 
+{
+    width: 90px;
 }
 
 .succes-body h1 
 {
-    font-size: 3rem;
+    font-size: 1.2rem;
     color: var(--main-color);
     font-family: var(--telefonica-light);
     font-weight: 300;
-    width: 50%;
-    margin-top: 100px;
+    margin-top: 24px;
+    text-align: center;
 }
 
 .succes-body p 
 {
-    font-size: 1.2rem;
-    width: 40%;
     font-family: var(--telefonica-light);
-    margin-top: 40px;
-    margin-bottom: 80px;
+    font-size: .9rem;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    text-align: center;
 }
 
 
@@ -79,5 +91,41 @@
     border-radius: 100px; 
     
 } 
+
+@media screen and (min-width: 768px) {
+    .succes-body 
+    {
+        background: url('assets/background-succes.png');
+        background-position:top left;
+        background-repeat: no-repeat;
+        top: 0;
+        padding-left: 70px;
+        padding-top: 70px;
+        align-items: flex-start;
+    }
+
+    .succes-body img 
+    {
+        width: 190px;
+    }
+
+    .succes-body h1
+    {
+        font-size: 3rem;
+        text-align: left;
+        margin-top: 100px;
+    } 
+
+    .succes-body p 
+    {
+        font-size: 1.3rem;
+        text-align: left;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
 
 

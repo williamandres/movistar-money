@@ -51,11 +51,21 @@ function sendForm()
         return false
     }
 
+    let captchaResponse = grecaptcha.getResponse();
     
-
+    if(captchaResponse.length == 0){
+        //no válida 
+        alert('dale check'); 
+        return false 
+    } else {
+        //captcha válida
+    }
+    
     return true
 
 }
+
+
 
 
 
