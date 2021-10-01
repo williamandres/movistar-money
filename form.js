@@ -24,6 +24,7 @@ const email = document.getElementById('email')
 const mobile = document.getElementById('00N5e00000bDrUC')
 const error = document.getElementById('error')
 const errorInput = document.getElementById('errorInput')
+const messageCaptcha = document.getElementById('messageCaptcha')
 
 
 
@@ -55,10 +56,11 @@ function sendForm()
     
     if(captchaResponse.length == 0){
         //no válida 
-        alert('dale check'); 
-        return false 
+        messageCaptcha.style.display = "block";
+        return false; 
     } else {
         //captcha válida
+        messageCaptcha.style.display = "none";
     }
     
     return true
