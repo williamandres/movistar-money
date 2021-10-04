@@ -998,10 +998,15 @@ p
     padding-left: 10px;
 }
 
+
 .checkbox-text a
 {
-    text-decoration: none;
     color: var(--white-color);
+}
+
+.checkbox-text-link 
+{
+    text-decoration: underline;
 }
 
 .input-submit
