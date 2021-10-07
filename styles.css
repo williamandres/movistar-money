@@ -445,10 +445,7 @@ p
         
     }
 
-    .first-section-paragraph-container
-    {
-        
-    }
+    
 
     .first-section-paragraph
     {
@@ -497,7 +494,7 @@ p
             display: flex;
             flex-direction: column;
             align-content: flex-start;
-            width: 65%;
+            width: 60%;
         }
         
         .first-section-paragraph 
@@ -513,10 +510,9 @@ p
 
         .first-section-form-container
         {
-            width: 45%;
             padding: 60px 60px 0 60px;
             align-items: flex-start;
-            width: 35%;
+            width: 40%;
         }
 
         .first-section-image 
