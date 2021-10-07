@@ -91,7 +91,7 @@
     font-size: 1.2rem;
     font-weight: 300;
     width: 95%;
-    text-align: left;
+    text-align: center;
     color: var(--main-color);
 }
 
@@ -140,7 +140,7 @@
     color: var(--main-color);
     font-size: .8rem;
     text-align: center;
-    width: 85%;
+    width: 285px;
     padding-top: 14px;
 }
 
@@ -157,7 +157,7 @@
     width: 240px;
     margin-top: 20px;
     border-radius: 10px;
-    
+    background-color: #f4f4f3;
 }
 
 .equipments-features1
