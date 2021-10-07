@@ -442,6 +442,12 @@ p
     .first-section
     {
         text-align: center;
+        
+    }
+
+    .first-section-paragraph-container
+    {
+        
     }
 
     .first-section-paragraph
@@ -469,6 +475,7 @@ p
     {
         background-color: var(--section-form-color);
         padding: 26px 16px 0 16px;
+       
     }
 
     .first-section-form-paragraph
@@ -490,6 +497,7 @@ p
             display: flex;
             flex-direction: column;
             align-content: flex-start;
+            width: 65%;
         }
         
         .first-section-paragraph 
@@ -508,6 +516,7 @@ p
             width: 45%;
             padding: 60px 60px 0 60px;
             align-items: flex-start;
+            width: 35%;
         }
 
         .first-section-image 
