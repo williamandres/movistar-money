@@ -274,4 +274,128 @@
     padding-bottom: 20px;
 }
 
+@media screen and (min-width: 1024px )  {
+    .equipments-body
+    {
+        background-color: var(--white-color);
+        background-image: url('assets/background-equipment.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .equipments-header
+    {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .equipments-main-message-frame{
+
+        width: 600px
+    }
+
+    .equipments-main-message-container 
+    {
+        width: 600px;
+        
+    }
+
+    .equipments-main-message
+    {
+        font-size: 1.8rem;
+        top: 34px;
+        left:40px;
+        width: 500px;
+        line-height : 40px;
+    }
+
+    .equipments-main-message span 
+    {
+        font-size: 2.5rem;
+    }
+
+    .equipments-logo 
+    {
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        width: 150px;
+    }
+
+    .equipments-phones 
+    {
+        width: 800px;
+    }
+
+    .equipments-secondary-message{
+        
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .equipments-features
+    {
+        display: flex;
+        
+        width: 720px;
+    }
+
+    .equipments-features1
+    {
+        width: 350px;
+        border-bottom: 0;
+        border-right: 2px solid var(--main-color);
+        padding-top: 30px;
+    }
+
+    .equipments-features1-image
+    {
+        padding-top: 0;
+        
+    }
+
+    .equipments-features2
+    {
+        width: 185px;
+        padding-top: 30px;
+    }
+
+    .equipments-features2-paragraph 
+    {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .equipments-features3
+    {
+        width: 185px;
+        border-top: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        padding-top: 0;
+        padding-top: 30px;
+        border-left: 2px solid var(--main-color);
+    }
+
+    .equipments-features3-paragraph
+    {
+        width: 70%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .equipments-features3-image
+    {
+        width: 50px;
+    }
+
+    .equipments-features1-title
+    {
+        padding-top: 14px;
+
+    }
+}
+
 
