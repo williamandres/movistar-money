@@ -1,0 +1,277 @@
+:root{
+    --main-color: #019df4;
+    --text-color: #0b2739;
+    --section-gray-color: #f2f4f2;
+    --section-form-color: #09202e;
+    --footer-color: #fffdfd;
+    --border-footer-color: #d3d4d3;
+    --text-link-color: #50535a;
+    --text-color-menu: #707070;
+    --white-color: #ffff;
+    --border-radius: 20px;
+    --telefonica-bold: Telefonica-Bold;
+    --telefonica-regular: Telefonica-Regular;
+    --telefonica-light: Telefonica-Light;
+    --underline-color: #a13ea1;
+    --terms-condition-text-color: #313235;
+    --Guthen-Bloots-Basic: Guthen-Bloots-Basic;
+    --orange-color: #ec624b;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+
+
+/* ****** fonts ******* */
+@font-face {
+    font-family:  Telefonica-Bold;
+    src: url('fonts/Telefonica-Bold.otf'); 
+}
+
+@font-face {
+    font-family:  Telefonica-Regular;
+    src: url('fonts/Telefonica-Regular.otf'); 
+}
+
+@font-face
+{
+    font-family:  Telefonica-Light;
+    src: url('fonts/Telefonica-Light.otf'); 
+}
+
+@font-face
+{
+    font-family:  Guthen-Bloots-Basic;
+    src: url('fonts/Guthen-Bloots-Basic.otf'); 
+}
+
+/* ***** */
+
+
+.equipments-body
+{
+    background-color: var(--white-color);
+    background-image: url('assets/equipment-background-mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.equipments-logo-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 22px;
+}
+
+.equipments-logo 
+{
+    width: 82px;
+}
+
+.equipments-main-message-container 
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 270px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+}
+
+.equipments-main-message-frame{
+    width: 270px;
+}
+
+.equipments-secondary-message{
+    font-family: var(--telefonica-regular);
+    font-size: 1.2rem;
+    font-weight: 300;
+    width: 95%;
+    text-align: left;
+    color: var(--main-color);
+}
+
+.equipments-main-message{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-family: var(--telefonica-bold);
+    font-size: .9rem;
+    line-height : 24px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.equipments-main-message span 
+{
+    font-family: var(--Guthen-Bloots-Basic);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.equipments-phones-container 
+{
+    display: flex;
+    justify-content: center;
+    
+} 
+
+.equipments-phones 
+{
+    width: 300px;
+}
+
+.equipments-secondary-message-container
+{
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+
+}
+
+.equipments-features-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.equipments-features{
+    border: 2px solid var(--main-color);
+    width: 240px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+.equipments-features1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.equipments-features1-image
+{
+    padding-top: 24px;
+}
+
+.equipments-features1-title 
+{
+    font-size: 1.3rem;
+    color: var(--main-color);
+    font-family: var(--telefonica-bold);
+    padding: 0 14px 0 14px;
+}
+
+.equipments-features1-paragraph 
+{
+    font-family: var(--telefonica-light);
+    color: var(--text-link-color);
+    font-size: .8rem;
+    margin-bottom: 14px;
+}
+
+.equipments-features1-paragraph2 
+{
+    font-family: var(--telefonica-regular);
+    color: var(--text-link-color);
+    font-size: .6rem;
+    width: 70%;
+    padding-bottom: 14px;
+}
+
+.equipments-features2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.equipments-features2-paragraph
+{
+    font-family: var(--telefonica-regular);
+    color: var(--text-link-color);
+    font-size: .8rem;
+    text-align: center;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+}
+
+.equipments-features2-paragraph span
+{
+    font-size: 1.3rem;
+    color: var(--main-color);
+    font-family: var(--telefonica-bold);
+}
+
+.equipments-features2-link
+{
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 10px 36px;
+    border-radius: 100px;
+    font-family: var(--telefonica-regular);
+    
+}
+
+.equipments-features3{
+    border-top: 2px solid var(--main-color);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.equipments-features3-paragraph 
+{
+    font-family: var(--telefonica-regular);
+    color: var(--text-link-color);
+    font-size: .8rem;
+    text-align: right;
+    width: 50%;
+    padding-right: 14px;
+}
+
+.equipments-features3-paragraph span{
+    font-size: 1.3rem;
+    color: var(--main-color);
+    font-family: var(--telefonica-bold);
+} 
+
+
+.equipments-features3-image 
+{
+    width: 40px;
+}
+
+.equipments-stamp 
+{
+    
+    height: 140px;
+}
+
+.equipments-final-message
+{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-family: var(--telefonica-regular);
+    color: var(--main-color);
+    font-size: .8rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
