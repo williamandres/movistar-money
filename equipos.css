@@ -258,8 +258,8 @@
     font-family: var(--telefonica-regular);
     color: var(--text-link-color);
     font-size: .8rem;
-    text-align: right;
-    width: 50%;
+    text-align: left;
+    width: 68%;
     padding-right: 14px;
 }
 
