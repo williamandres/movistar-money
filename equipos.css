@@ -128,9 +128,20 @@
 .equipments-secondary-message-container
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     padding-left: 20px;
+}
 
+.equipments-secondary-message-p
+{
+    font-family: var(--telefonica-light);
+    color: var(--main-color);
+    font-size: .8rem;
+    text-align: center;
+    width: 85%;
+    padding-top: 14px;
 }
 
 .equipments-features-container 
@@ -168,6 +179,14 @@
     color: var(--main-color);
     font-family: var(--telefonica-bold);
     padding: 0 14px 0 14px;
+}
+
+.equipments-features-paragraph
+{
+    font-family: var(--telefonica-light);
+    color: var(--text-link-color);
+    font-size: .8rem;
+    padding-top: 14px;
 }
 
 .equipments-features1-paragraph 
@@ -431,6 +450,17 @@
         padding-bottom: 20px;
     }
 
+    .equipments-secondary-message-container
+    {
+        align-items: center;
+    }
+
+    .equipments-secondary-message-p 
+    {
+        font-size: 1.2rem;
+        padding-top: 0;
+    }
+
     .equipments-features3
     {
         width: 185px;
@@ -445,7 +475,7 @@
 
     .equipments-features3-paragraph
     {
-        width: 70%;
+        width: 90%;
         text-align: center;
         padding-bottom: 20px;
     }
@@ -457,8 +487,7 @@
 
     .equipments-features1-title
     {
-        padding-top: 14px;
-
+        padding-top: 0;
     }
 
     .equipments-footer-content-container 
